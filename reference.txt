@@ -1,0 +1,5 @@
+This file contains all the references to the files that are used in the project. It is used to make sure that the files are loaded in the correct order. The files are loaded in the order they are listed in the file. The file is loaded in the index.html file.
+
+OPEN WEATEHR MAP API
+    The API key is obtained from open weather which is logged in with any email
+    
