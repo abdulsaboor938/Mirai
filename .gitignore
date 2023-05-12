@@ -1,1 +1,4 @@
-scripts/__pycache__/functions.cpython-310.pyc
+raw_data.csv
+Batch Data/*
+lightning_logs/*
+```
