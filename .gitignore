@@ -4,3 +4,7 @@ lightning_logs/*
 ```
 metabase/metabase.jar
 final_data.csv
+```
+1. API-Extract.ipynb
+2. Model.ipynb
+3. Setup.ipynb
