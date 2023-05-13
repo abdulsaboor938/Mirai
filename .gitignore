@@ -5,4 +5,4 @@ lightning_logs/*
 metabase/metabase.jar
 final_data.csv
 ```
-*.ipynb
+# *.ipynb
