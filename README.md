@@ -246,3 +246,7 @@ You've made it through, enjoy beautiful visualizations and dashboards like this,
 - [OpenWeatherMap](https://openweathermap.org/)
 - [Open-Meteo](https://open-meteo.com/)
 - [NeuralProphet](https://neuralprophet.com/)
+
+-----
+
+To contribute to the [Mirai](https://github.com/abdulsaboor938/Mirai) project, check out <https://github.com/abdulsaboor938/Mirai>
