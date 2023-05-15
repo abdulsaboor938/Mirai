@@ -138,6 +138,15 @@ This module describes the implementation of the ***2.Model.ipynb*** file.
 
 Following Steps are implemented in this file:
 
-- [The data for a single city is extracted]
+**Extracting Single City**
+To gain higher accuracy in results, models are trained for each city separately and then predictions are compiled into one singular format. The first step is to get the data of a single city. This is simply an abstraction of the `raw_data.csv` on the basis of city's zonal separation.
 
-- [Model is trained on a sinlge city]
+![SIngle City](https://github.com/abdulsaboor938/Mirai/blob/c8787d5070ab625c21686404efcdbbca7836a75a/images/Screenshot%202023-05-16%20at%2012.23.53%20AM.png)
+
+**Model training for `Temperature` `pm10` `pm25`**
+
+Now that we have obtained a raw representation of data, its time to apply the model. After the pre-processing steps involving `train-test split` and creation of the `ds` and `y` column. We have a following representation.
+
+
+
+**Predictions**
