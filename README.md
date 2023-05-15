@@ -19,7 +19,9 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
         - [PostgreSQL](#postgresql)
 - [Scripts Description](#scripts)
     - [Extraction from API](#api-extraction)
-    - [Go to the Import View](#go-to-the-import-view)
+    - [Machine Learning Model](#model)
+        - [Training](#model-training)
+        - [Evaluation](#model-evaluation)
     - [Upload the page tree file](#upload-the-page-tree-file)
     - [Go to the import view](#go-to-the-import-view)
     - [Import the page tree](#import-the-page-tree)
@@ -111,3 +113,40 @@ This script gathers multiple API responses based on the coordinates and cities d
 The data is collected from `January 1, 2021` to current data. When following this format, The API call returns `8760` entries for each year.
 This data is collected into 10 csv files, each with `500,000+` entries. *This was done to enable parallel extraction and save valuable time in the live enviroment.*
 These files are named **1** to **10** resepctively and are stored in the `Batch Data` folder.
+
+![raw_data](https://github.com/abdulsaboor938/Mirai/blob/c8787d5070ab625c21686404efcdbbca7836a75a/images/Screenshot%202023-05-16%20at%2012.23.53%20AM.png)
+
+The `raw_data.csv` is a compiled file of all the `5,000,000+` entries. This is the file used for model training and further processing. The file is described as following:
+
+`date` The human readable timestamp.
+
+`zone` The city's zone **(1-248)**.
+
+`longitude` `latitude`
+
+`temperature` `pm10` `pm2_5` The quality paramaeters.
+
+`smog` This is based on the intuition that when maximum value of `pm10 & pm25` is greater than `300` and temperature is less than `25 Celcius`.
+
+-----
+
+## Model
+
+### Model Training
+
+This module describes the implementation of the ***2.Model.ipynb*** file.
+
+Following Steps are implemented in this file:
+
+**Extracting Single City**
+To gain higher accuracy in results, models are trained for each city separately and then predictions are compiled into one singular format. The first step is to get the data of a single city. This is simply an abstraction of the `raw_data.csv` on the basis of city's zonal separation.
+
+![SIngle City](https://github.com/abdulsaboor938/Mirai/blob/c8787d5070ab625c21686404efcdbbca7836a75a/images/Screenshot%202023-05-16%20at%2012.23.53%20AM.png)
+
+**Model training for `Temperature` `pm10` `pm25`**
+
+Now that we have obtained a raw representation of data, its time to apply the model. After the pre-processing steps involving `train-test split` and creation of the `ds` and `y` column. We have a following representation.
+
+
+
+**Predictions**
