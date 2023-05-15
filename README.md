@@ -1,6 +1,6 @@
 ![Logo](https://github.com/abdulsaboor938/Mirai/blob/74d06816a52fbb56f218cb84c84be3efe1a130fe/images/logo-banner.png)
 
-# Mirai
+# Mirai (Predicting Photochemical SMOG)
 This project aims to predict the occurrence of photochemical smog, commonly known as smog, in specific areas or regions worldwide. The goal is to develop an application that combines real-time air pollution and weather data to provide accurate and timely predictions of smog intensity and timing. The project is in its early stages, with a focus on achieving accurate predictions based on the collected dataset.
 
 The dataset is being collected using APIs from sources such as OpenWeatherMap and Open-Meteo. These APIs provide information on various air pollutants (aqi, co, no, no2, o3, so2, pm2_5, pm10, and nh3) as well as temperature and dew point. The data is pre-processed and merged from both sources, ensuring synchronization of date and location coordinates.
