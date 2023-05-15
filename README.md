@@ -149,4 +149,29 @@ Now that we have obtained a raw representation of data, its time to apply the mo
 
 ![training_data](https://github.com/abdulsaboor938/Mirai/blob/1faea581515a83ae86777b29299f7ff6f475ac66/images/Screenshot%202023-05-16%20at%2012.51.45%20AM.png)
 
+Viola! We have made it to model training, which is defined as following:
+```Python
+from neuralprophet import NeuralProphet, set_log_level
+set_log_level("ERROR")
+
+m = NeuralProphet(
+    changepoints_range=0.95,
+    n_changepoints=24,
+    trend_reg=1,
+    weekly_seasonality=False,
+    daily_seasonality=1,
+    seasonality_mode="multiplicative",
+)
+```
+A multiplicative model is applied to better capture the changes in trend over a 24-hour period, 95th percentile of data.
+
+Tough the model works in most efficient manner, a parallel kernel split is recommneded to speed up the training process.
+
+![parallel Training](#)
+
+A need to parallel processing was deemed necessary in order to compensate for expense of training required. Each parameter requires compilation of a `20gb` model. This equates to `60gb (20*3)` training for each city, equating to a total of `15TB` of training.
+
+***The demo training was carried out on 2 Mac machines, split across 3 kernels on each machine. Overall training time on Apple's M1 Neural engine was around 2 hours (per machine). ***
+
 **Predictions**
+
