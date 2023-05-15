@@ -19,7 +19,9 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
         - [PostgreSQL](#postgresql)
 - [Scripts Description](#scripts)
     - [Extraction from API](#api-extraction)
-    - [Go to the Import View](#go-to-the-import-view)
+    - [Machine Learning Model](#model)
+        - [Training](#model-training)
+        - [Evaluation](#model-evaluation)
     - [Upload the page tree file](#upload-the-page-tree-file)
     - [Go to the import view](#go-to-the-import-view)
     - [Import the page tree](#import-the-page-tree)
@@ -116,12 +118,26 @@ These files are named **1** to **10** resepctively and are stored in the `Batch 
 
 The `raw_data.csv` is a compiled file of all the `5,000,000+` entries. This is the file used for model training and further processing. The file is described as following:
 
-`date` The human readable timestamp
+`date` The human readable timestamp.
 
-`zone` The city's zone **(1-248)**
+`zone` The city's zone **(1-248)**.
 
 `longitude` `latitude`
 
 `temperature` `pm10` `pm2_5` The quality paramaeters.
 
 `smog` This is based on the intuition that when maximum value of `pm10 & pm25` is greater than `300` and temperature is less than `25 Celcius`.
+
+-----
+
+## Model
+
+### Model Training
+
+This module describes the implementation of the ***2.Model.ipynb*** file.
+
+Following Steps are implemented in this file:
+
+- [The data for a single city is extracted]
+
+- [Model is trained on a sinlge city]
