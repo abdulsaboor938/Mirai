@@ -14,13 +14,11 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
 
 - [Initial Setup](#installation)
     - [Neural Prophet](#neural-prophet)
-    - [DDev or Colima](#ddev)
-    - [TER](#ter-extension)
-- [TYPO3 setup](#typo3-setup)
-    - [Database setup](#database-setup)
-    - [Security](#security)
-- [Page setup](#page-setup)
-    - [Download the Aimeos Page Tree t3d file](#download-the-aimeos-page-tree-t3d-file)
+    - [Addtional Dependencies](#additional-installations)
+        - [MetaBase]
+        - [PostgreSQL]
+- [Scripts Description](#scripts)
+    - [Extraction from API](#api-extraction)
     - [Go to the Import View](#go-to-the-import-view)
     - [Upload the page tree file](#upload-the-page-tree-file)
     - [Go to the import view](#go-to-the-import-view)
@@ -33,4 +31,30 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
 ## Installation
 
 ### Neural Prophet
-hello
+**Note:** neural-prophet is required!
+
+The latest version can be installed via PIP or conda prompt, version might be dependent on your python environment. Latest release is recommended. This process is automated on most systems and can be executed with following terminal command:
+
+```bash
+pip install neural-prophet
+```
+
+
+### Additional Installations
+**Note:** These installations are not necessary to run the vanilla version of the project but are recommended to get installation of an interactive **MetaBase Dashboard** up and running.
+
+### MetaBase
+The latest release of metabase can be downloaded using the following automated command line argument:
+````bash
+wget http://downloads.metabase.com/v0.46.0/metabase.jar
+````
+**Note:** Eclipse JAVA runtime should be installed on the system
+
+### PostgreSQL
+This is a database packaged installation. The database is used as a backend for MetaBase, So this is the pre-requisite in order to run a successful MetaBase instance.
+
+**The platform specific binaries and packages can be found on [PostgreSQL](https://www.postgresql.org/download/) website.**
+
+-----
+## Scripts
+### API-Extraction
