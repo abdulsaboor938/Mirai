@@ -167,11 +167,17 @@ A multiplicative model is applied to better capture the changes in trend over a 
 
 Tough the model works in most efficient manner, a parallel kernel split is recommneded to speed up the training process.
 
-![parallel Training](#)
+![parallel Training](https://github.com/abdulsaboor938/Mirai/blob/389787549f57dd5bc46ef3384cfb84090c38364d/images/Screenshot%202023-05-13%20at%2011.40.14%20AM.png)
 
 A need to parallel processing was deemed necessary in order to compensate for expense of training required. Each parameter requires compilation of a `20gb` model. This equates to `60gb (20*3)` training for each city, equating to a total of `15TB` of training.
 
-***The demo training was carried out on 2 Mac machines, split across 3 kernels on each machine. Overall training time on Apple's M1 Neural engine was around 2 hours (per machine). ***
+***The demo training was carried out on 2 Mac machines, split across 3 kernels on each machine. Overall training time on Apple's M1 Neural engine was around 2 hours (per machine).***
+
+### Training Error
+![Training Error](https://github.com/abdulsaboor938/Mirai/blob/389787549f57dd5bc46ef3384cfb84090c38364d/images/Screenshot%202023-05-16%20at%201.05.31%20AM.png)
 
 **Predictions**
 
+Once model is validated for training error. The predictions are combine into a file along with original data values. This file is created by concatenating `raw_data` and `prediction` folder's files. The newly generated file is stored as `final_data.csv`
+
+**Note: The final form of data is not included in this repository due to Github's Size limitations.**
