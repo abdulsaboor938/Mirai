@@ -58,3 +58,56 @@ This is a database packaged installation. The database is used as a backend for 
 -----
 ## Scripts
 ### API-Extraction
+**Note:** To get this project running, you will need [OpenweatherMap's](https://home.openweathermap.org/api_keys) API key. This can be done by creating a trial account. THough a premium plan with higher API call limits is recommended in order to run this as a live environemnt.
+
+Once API key is obtained, it can be updated in **api_key** environment variable, found in the beginning of ***1.API_extract.ipynb***
+
+`api_key`
+
+This script gathers multiple API responses based on the coordinates and cities defined in following environment variables:
+
+`coordinates` This is an array of all longitudes and latitudes of the city, each corresponding to a predefined **zone**.
+
+`cities` This is an array containing the **names of the cities** coorresponding all zonal coordinates in the coordinates environment variable.
+
+**1. OpenWeatherMap**
+```JSON
+{"coord":
+    {"lon":41.0193,"lat":43.0034},
+    "list":
+    [
+        {"main":{"aqi":1},
+            "components":{"co":211.95,"no":0,"no2":0.48,"o3":53.64,"so2":0.03,"pm2_5":1.09,"pm10":1.25,"nh3":0.85},
+        "dt":1609459200},
+        {"main":{"aqi":1},
+            "components":{"co":211.95,"no":0,"no2":0.52,"o3":55.79,"so2":0.03,"pm2_5":1.11,"pm10":1.26,"nh3":0.91},
+        "dt":1609462800}
+    ]
+}
+```
+
+**2. Meteo**
+```JSON
+{
+    "latitude":43.0,
+    "longitude":41.0,
+    "generationtime_ms":18.211007118225098,
+    "utc_offset_seconds":0,
+    "timezone":"GMT",
+    "timezone_abbreviation":"GMT",
+    "elevation":14.0,
+    "hourly_units":{"time":"iso8601","temperature_2m":"°C","dewpoint_2m":"°C"},
+    "hourly":{
+        "time":["2021-01-01T00:00","2021-01-01T01:00"],
+        "temperature_2m":[5.5,4.3],
+        "dewpoint_2m":[2.0,1.5]
+    }
+}
+````
+***OpenWeatherMap was only used to collect the pollutants data and hence Meteo is used to collect `temperature` and `dewpoint` information for the corresponding entries.***
+
+### Compilation
+
+The data is collected from `January 1, 2021` to current data. When following this format, The API call returns `8760` entries for each year.
+This data is collected into 10 csv files, each with `500,000+` entries. *This was done to enable parallel extraction and save valuable time in the live enviroment.*
+These files are named **1** to **10** resepctively and are stored in the `Batch Data` folder.
