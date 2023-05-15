@@ -147,6 +147,6 @@ To gain higher accuracy in results, models are trained for each city separately 
 
 Now that we have obtained a raw representation of data, its time to apply the model. After the pre-processing steps involving `train-test split` and creation of the `ds` and `y` column. We have a following representation.
 
-
+![training_data](https://github.com/abdulsaboor938/Mirai/blob/1faea581515a83ae86777b29299f7ff6f475ac66/images/Screenshot%202023-05-16%20at%2012.51.45%20AM.png)
 
 **Predictions**
