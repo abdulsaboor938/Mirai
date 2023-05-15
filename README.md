@@ -15,7 +15,7 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
 - [Initial Setup](#installation)
     - [Neural Prophet](#neural-prophet)
     - [Addtional Dependencies](#additional-installations)
-        - [MetaBase](#metabase)
+        - [Metabase](#metabase)
         - [PostgreSQL](#postgresql)
 - [Scripts Description](#scripts)
     - [Extraction from API](#api-extraction)
@@ -25,7 +25,7 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
         - [Predictions](#predictions)
 - [Visualizations](#visualizations)
     - [Database Setup](#database-setup)
-    - [MetaBase](#metabase)
+    - [Metabase](#metabase)
 - [License](#license)
 - [Links](#links)
 
@@ -43,9 +43,9 @@ pip install neural-prophet
 
 
 ### Additional Installations
-**Note:** These installations are not necessary to run the vanilla version of the project but are recommended to get installation of an interactive **MetaBase Dashboard** up and running.
+**Note:** These installations are not necessary to run the vanilla version of the project but are recommended to get installation of an interactive **Metabase Dashboard** up and running.
 
-### MetaBase
+### Metaase
 The latest release of metabase can be downloaded using the following automated command line argument:
 ````bash
 wget http://downloads.metabase.com/v0.46.0/metabase.jar
@@ -53,7 +53,7 @@ wget http://downloads.metabase.com/v0.46.0/metabase.jar
 **Note:** Eclipse JAVA runtime should be installed on the system
 
 ### PostgreSQL
-This is a database packaged installation. The database is used as a backend for MetaBase, So this is the pre-requisite in order to run a successful MetaBase instance.
+This is a database packaged installation. The database is used as a backend for Metabase, So this is the pre-requisite in order to run a successful Metabase instance.
 
 **The platform specific binaries and packages can be found on [PostgreSQL](https://www.postgresql.org/download/) website.**
 
@@ -187,15 +187,43 @@ Once model is validated for training error. The predictions are combine into a f
 
 ## Visualizations
 
-## Database
+### Database
 
 We have made it through the difficult part of this implementation. Its time to give yourself a cheer!
 
 Now run the downloaded **PostgreSQL** database server and connct it with the IDE of your choice. Here, Jetbrain's DataGrip IDE was used in conjunction with PosgreSQL's Mac Distribution to simply load the `final_data.csv` file into `postrgre` schema.
 
-![postgreSQL-server](#)
+![postgreSQL-server](https://github.com/abdulsaboor938/Mirai/blob/c15ec877029187ac23fbf951284f705f6bcdcc35/images/Screenshot%202023-05-16%20at%201.24.16%20AM.png)
 
-![DataGrip](#)
+![DataGrip](https://github.com/abdulsaboor938/Mirai/blob/125cb8f01aef7507379e75cdc39fa0f15c18dfd7/images/Screenshot%202023-05-14%20at%201.46.24%20AM.png)
 
-Once this is done, the only thing left is to run `MetaBase` and drill through the visualizations to acquire any additional details about the data.
+Once this is done, the only thing left is to run `Metabase` and drill through the visualizations to acquire any additional details about the data.
 
+### Metabase
+
+Head over the directory where you downloaded the Metabase Jar file in [this](#additional-dependencies) step. Open a terminal window in that directory and type in the following command:
+```bash
+!java -jar metabase.jar
+```
+
+Or you can alternatively run this command in any folder of your choice, If Metabase not downloaded already. **Eclipse's JAVA runtime should be installed**
+```bash
+# check if metabase.jar is present, if not download it
+if [ ! -f metabase.jar ]; then
+    wget https://downloads.metabase.com/v0.46.0/metabase.jar
+fi
+
+# run metabase
+java -jar metabase.jar
+```
+
+**Phew! That was quite hectic.**
+
+Wait a few settings and once Metabase is running, headover to `localhost:3000` to access `Metabase`
+
+Head over to `admin settings -> databases` and configure teh database as following:
+![database connection](https://github.com/abdulsaboor938/Mirai/blob/125cb8f01aef7507379e75cdc39fa0f15c18dfd7/images/Screenshot%202023-05-16%20at%201.25.07%20AM.png)
+
+`GOOD LAD`
+
+You've made it through, enjoy beautiful visualizations and dashboards like this, representing both `historical data` and `7-day forecast`. **Remember to play-around and try to find answers to your curious questions.**
