@@ -26,8 +26,8 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
 - [Visualizations](#visualizations)
     - [Database Setup](#database-setup)
     - [Metabase](#metabase)
-- [License](#license)
-- [Links](#links)
+- [AUthors](#authors)
+- [Acknowledgements](#acknowledgements)
 
 ------
 ## Installation
@@ -232,3 +232,17 @@ You've made it through, enjoy beautiful visualizations and dashboards like this,
 ![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.41.45%20AM.png)
 ![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.42.33%20AM.png)
 ![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.42.51%20AM.png)
+
+-----
+
+## Authors
+[@abdulsaboor938](https://github.com/abdulsaboor938)
+[@minalurooj](mailto:l201388@lhr.nu.edu.pk)
+
+-----
+
+## Acknowledgements
+
+- [OpenWeatherMap](https://openweathermap.org/)
+- [Open-Meteo](https://open-meteo.com/)
+- [NeuralProphet](https://neuralprophet.com/)
