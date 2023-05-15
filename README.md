@@ -15,8 +15,8 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
 - [Initial Setup](#installation)
     - [Neural Prophet](#neural-prophet)
     - [Addtional Dependencies](#additional-installations)
-        - [MetaBase]
-        - [PostgreSQL]
+        - [MetaBase](#metabase)
+        - [PostgreSQL](#postgresql)
 - [Scripts Description](#scripts)
     - [Extraction from API](#api-extraction)
     - [Go to the Import View](#go-to-the-import-view)
