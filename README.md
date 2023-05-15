@@ -26,7 +26,7 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
 - [Visualizations](#visualizations)
     - [Database Setup](#database-setup)
     - [Metabase](#metabase)
-- [AUthors](#authors)
+- [Authors](#authors)
 - [Acknowledgements](#acknowledgements)
 
 ------
