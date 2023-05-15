@@ -227,3 +227,8 @@ Head over to `admin settings -> databases` and configure teh database as followi
 `GOOD LAD`
 
 You've made it through, enjoy beautiful visualizations and dashboards like this, representing both `historical data` and `7-day forecast`. **Remember to play-around and try to find answers to your curious questions.**
+
+![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.41.33%20AM.png)
+![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.41.45%20AM.png)
+![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.42.33%20AM.png)
+![](https://github.com/abdulsaboor938/Mirai/blob/e9f9306bada38fc240a43ce33c8d2fe352ff94ae/images/Screenshot%202023-05-16%20at%201.42.51%20AM.png)
