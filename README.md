@@ -22,6 +22,7 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
     - [Machine Learning Model](#model)
         - [Training](#model-training)
         - [Evaluation](#model-evaluation)
+        - [Predictions](#predictions)
     - [Upload the page tree file](#upload-the-page-tree-file)
     - [Go to the import view](#go-to-the-import-view)
     - [Import the page tree](#import-the-page-tree)
@@ -173,10 +174,11 @@ A need to parallel processing was deemed necessary in order to compensate for ex
 
 ***The demo training was carried out on 2 Mac machines, split across 3 kernels on each machine. Overall training time on Apple's M1 Neural engine was around 2 hours (per machine).***
 
-### Training Error
+### Model Evaluation
+**Training Error**
 ![Training Error](https://github.com/abdulsaboor938/Mirai/blob/389787549f57dd5bc46ef3384cfb84090c38364d/images/Screenshot%202023-05-16%20at%201.05.31%20AM.png)
 
-**Predictions**
+### Predictions
 
 Once model is validated for training error. The predictions are combine into a file along with original data values. This file is created by concatenating `raw_data` and `prediction` folder's files. The newly generated file is stored as `final_data.csv`
 
