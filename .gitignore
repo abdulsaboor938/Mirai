@@ -8,3 +8,4 @@ final_data.csv
 *.ipynb
 ```
 .DS_Store
+metabase/metabase.db.mv.db
