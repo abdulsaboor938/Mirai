@@ -23,10 +23,9 @@ Once the accurate prediction of smog patterns is achieved, the project aims to d
         - [Training](#model-training)
         - [Evaluation](#model-evaluation)
         - [Predictions](#predictions)
-    - [Upload the page tree file](#upload-the-page-tree-file)
-    - [Go to the import view](#go-to-the-import-view)
-    - [Import the page tree](#import-the-page-tree)
-    - [SEO-friendly URLs](#seo-friendly-urls)
+- [Visualizations](#visualizations)
+    - [Database Setup](#database-setup)
+    - [MetaBase](#metabase)
 - [License](#license)
 - [Links](#links)
 
@@ -183,3 +182,20 @@ A need to parallel processing was deemed necessary in order to compensate for ex
 Once model is validated for training error. The predictions are combine into a file along with original data values. This file is created by concatenating `raw_data` and `prediction` folder's files. The newly generated file is stored as `final_data.csv`
 
 **Note: The final form of data is not included in this repository due to Github's Size limitations.**
+
+-----
+
+## Visualizations
+
+## Database
+
+We have made it through the difficult part of this implementation. Its time to give yourself a cheer!
+
+Now run the downloaded **PostgreSQL** database server and connct it with the IDE of your choice. Here, Jetbrain's DataGrip IDE was used in conjunction with PosgreSQL's Mac Distribution to simply load the `final_data.csv` file into `postrgre` schema.
+
+![postgreSQL-server](#)
+
+![DataGrip](#)
+
+Once this is done, the only thing left is to run `MetaBase` and drill through the visualizations to acquire any additional details about the data.
+
