@@ -237,6 +237,7 @@ You've made it through, enjoy beautiful visualizations and dashboards like this,
 
 ## Authors
 [@abdulsaboor938](https://github.com/abdulsaboor938)
+
 [@minalurooj](mailto:l201388@lhr.nu.edu.pk)
 
 -----
@@ -246,6 +247,9 @@ You've made it through, enjoy beautiful visualizations and dashboards like this,
 - [OpenWeatherMap](https://openweathermap.org/)
 - [Open-Meteo](https://open-meteo.com/)
 - [NeuralProphet](https://neuralprophet.com/)
+- [Metabase](https://www.metabase.com/)
+- [DataGrip](https://www.jetbrains.com/datagrip/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 -----
 
