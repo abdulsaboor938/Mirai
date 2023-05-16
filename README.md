@@ -165,7 +165,7 @@ m = NeuralProphet(
 ```
 A multiplicative model is applied to better capture the changes in trend over a 24-hour period, 95th percentile of data.
 
-Tough the model works in most efficient manner, a parallel kernel split is recommneded to speed up the training process.
+Though the model works in most efficient manner, a parallel kernel split is recommneded to speed up the training process.
 
 ![parallel Training](https://github.com/abdulsaboor938/Mirai/blob/389787549f57dd5bc46ef3384cfb84090c38364d/images/Screenshot%202023-05-13%20at%2011.40.14%20AM.png)
 
