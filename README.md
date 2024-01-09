@@ -102,7 +102,9 @@ This script gathers multiple API responses based on the coordinates and cities d
     "hourly":{
         "time":["2021-01-01T00:00","2021-01-01T01:00"],
         "temperature_2m":[5.5,4.3],
-        "dewpoint_2m":[2.0,1.5]
+        "dewpoint_2m":[2.0,1.5],
+        "wind_speed_10m":[1.6, 3.8],
+        "wind_direction_10m":[91, 137]
     }
 }
 ````
